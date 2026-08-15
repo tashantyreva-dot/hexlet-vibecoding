@@ -6,15 +6,15 @@
 <title>Калькулятор суточной нормы калорий</title>
 <style>
   :root {
-    --bg: #f2f4f8;
-    --card-bg: #ffffff;
-    --primary: #4f7cff;
-    --primary-dark: #3a63e0;
-    --text: #1f2430;
-    --muted: #6b7280;
-    --border: #e2e6ef;
+    --bg: #f6f1fb;
+    --card-bg: #fffbf9;
+    --primary: #b8a4e3;
+    --primary-dark: #9885d1;
+    --text: #4a4358;
+    --muted: #9089a0;
+    --border: #ecdff2;
     --radius: 14px;
-    --shadow: 0 8px 24px rgba(31, 36, 48, 0.08);
+    --shadow: 0 8px 24px rgba(184, 164, 227, 0.18);
   }
 
   * {
@@ -25,7 +25,7 @@
     margin: 0;
     padding: 24px 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: linear-gradient(180deg, #eef1f8 0%, #f7f9fc 100%);
+    background: linear-gradient(180deg, #f6f1fb 0%, #fdf2f6 100%);
     color: var(--text);
     min-height: 100vh;
     display: flex;
@@ -98,7 +98,7 @@
 
   .gender-toggle input:checked + label.option {
     border-color: var(--primary);
-    background: rgba(79, 124, 255, 0.08);
+    background: rgba(184, 164, 227, 0.16);
     color: var(--primary-dark);
     font-weight: 600;
   }
@@ -110,7 +110,7 @@
     font-size: 16px;
     border: 1.5px solid var(--border);
     border-radius: 10px;
-    background: #fff;
+    background: #fdfaff;
     color: var(--text);
     outline: none;
     transition: border-color 0.15s ease;
@@ -124,7 +124,7 @@
   }
 
   select {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8'><path d='M1 1l6 6 6-6' stroke='%236b7280' stroke-width='2' fill='none' fill-rule='evenodd'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8'><path d='M1 1l6 6 6-6' stroke='%239089a0' stroke-width='2' fill='none' fill-rule='evenodd'/></svg>");
     background-repeat: no-repeat;
     background-position: right 14px center;
     padding-right: 36px;
@@ -136,7 +136,7 @@
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: var(--primary);
+    background: var(--primary-dark);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -144,7 +144,7 @@
   }
 
   button:active {
-    background: var(--primary-dark);
+    background: #7e68bd;
   }
 
   .results {
@@ -175,7 +175,7 @@
   .result-label small {
     display: block;
     font-size: 12px;
-    color: #9aa1b1;
+    color: #a99fb3;
     margin-top: 2px;
   }
 
@@ -190,11 +190,11 @@
   }
 
   .result-row.lose .result-value {
-    color: #16a34a;
+    color: #5fac82;
   }
 
   .result-row.gain .result-value {
-    color: #d97706;
+    color: #d9924f;
   }
 
   .hint {
